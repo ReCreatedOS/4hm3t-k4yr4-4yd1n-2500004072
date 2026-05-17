@@ -51,12 +51,23 @@ Etkinliklere katılımcı kaydeden, bilet üreten ve doluluk raporu sunan basit 
 - Her etkinliğin `katilimcilar` listesi ve her katılımcının `biletler` listesi vardır.
 
 ## Çalıştırma
+
+**Konsol arayüzü:**
 ```bash
 cd proje_04_etkinlik
 python3 main.py
 ```
 
-Açılışta 3 örnek etkinlik ve 3 örnek katılımcı otomatik yüklenir. **"Python Workshop"** etkinliğinin kapasitesi sadece 3'tür — kapasite testi için kullanılabilir.
+**Grafik arayüz (customtkinter — modern dark theme):**
+```bash
+cd proje_04_etkinlik
+pip install -r requirements.txt   # ilk seferde
+python3 arayuz.py
+```
+
+Açılışta 3 örnek etkinlik ve 4 örnek katılımcı otomatik yüklenir. **"Python Workshop"** etkinliğinin kapasitesi sadece 3'tür — kapasite testi için kullanılabilir.
+
+> `customtkinter` kütüphanesi `tkinter` üzerine kuruludur. Eğer `pip install` "externally-managed-environment" hatası verirse: `pip install --break-system-packages -r requirements.txt` veya bir venv kullanabilirsin.
 
 ## Örnek Senaryo
 1. Menüden **1** → mevcut etkinlikleri gör (doluluk `0/3`, `0/100`, `0/50`).

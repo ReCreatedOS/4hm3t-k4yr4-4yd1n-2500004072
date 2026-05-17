@@ -56,12 +56,23 @@ Bir kütüphanedeki kitapların üyelere ödünç verilmesini ve iade edilmesini
 - Her üyenin `aktif_oduncler` özelliği kendi ödünçlerini tutar (List)
 
 ## Çalıştırma
+
+**Konsol arayüzü:**
 ```bash
 cd proje_03_kutuphane
 python3 main.py
 ```
 
-Açılışta 4 örnek kitap ve 2 örnek üye otomatik yüklenir.
+**Grafik arayüz (customtkinter — modern dark theme):**
+```bash
+cd proje_03_kutuphane
+pip install -r requirements.txt   # ilk seferde
+python3 arayuz.py
+```
+
+Açılışta 5 örnek kitap ve 3 örnek üye otomatik yüklenir.
+
+> `customtkinter` kütüphanesi `tkinter` üzerine kuruludur. Eğer `pip install` "externally-managed-environment" hatası verirse: `pip install --break-system-packages -r requirements.txt` veya bir venv kullanabilirsin.
 
 ## Örnek Senaryo
 1. Menüden **1** → kitap listesini gör.
